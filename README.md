@@ -10,9 +10,7 @@ Este projeto foi criado com foco no desenvolvimento de layouts responsivos utili
 
 - Dominar o uso do **Flexbox** para layouts responsivos
 - Implementar **Design Responsivo** para múltiplos dispositivos
-- Desenvolver funcionalidades interativas com **JavaScript**
-- Trabalhar com **SVG** para ícones escaláveis
-- Implementar **Dark Mode** com persistência de dados
+- **JavaScript** apenas para a funcinalidae do DARK MODE.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -20,7 +18,7 @@ Este projeto foi criado com foco no desenvolvimento de layouts responsivos utili
 |------------|-----------|
 | **HTML5** | Estruturação semântica do conteúdo |
 | **CSS3** | Estilização e implementação do layout com Flexbox |
-| **JavaScript** | Funcionalidades interativas e manipulação do DOM |
+| **JavaScript** | Funcionalidade DARK MODE |
 | **SVG** | Ícones e logos escaláveis para diferentes resoluções |
 
 ## ✨ Funcionalidades
