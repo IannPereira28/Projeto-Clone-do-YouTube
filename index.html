@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/youtube.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Recriação da página do YouTube com foco em acessibilidade e responsividade.">
+    <meta name="keywords" content="YouTube, acessibilidade, responsividade, HTML, CSS, JavaScript">
+    <meta name="author" content="Iann Pereira">
+    <title>IannTube</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-header">
+            <button class="menu-icon" aria-label="Abrir menu principal">☰</button>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="Página inicial do YouTube">
+                <img id="logoImg" src="./assets/icons/logo-default.svg" alt="Logo do YouTube">
+            </a>
+        </div>
+        <form class="search-bar" role="search">
+            <label for="search-input" class="sr-only">Pesquisar no YouTube</label>
+            <input type="text" id="search-input" placeholder="Pesquisar">
+            <button type="submit" aria-label="Pesquisar">🔎</button>
+        </form>
+        <div class="user-icons">
+            <button class="btn-user-icons" aria-label="Criar vídeo ou postagem">
+                <img src="./assets/icons/video.svg" alt="Criar vídeo ou postagem">
+            </button>
+            <button class="btn-user-icons" aria-label="Notificações">
+                <img src="./assets/icons/bell.svg" alt="Notificações">
+            </button>
+            <button id="toggleTheme" aria-label="Alternar modo claro/escuro">
+                <img id="themeIcon" src="./assets/icons/sol.svg" alt="Alternar tema">
+            </button>
+            <div class="avatar" role="img" aria-label="Avatar do usuário"><img src="./assets/icons/user.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="video-player-area">
+            <div class="video-wrapper">
+                <figure>
+                    <iframe src="https://www.youtube.com/embed/DqC8R2p0lls?si=Mdz2QCPDCMOAT2aE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                        title="Lançamento Santander Bootcamp 2025"></iframe>
+                </figure>
+            </div>
+
+        </section>
+
+        <article class="video-info">
+            <h1>>Lançamento Santander Bootcamp 2025</h1>
+            <div class="video-actions">
+                <section class="channel-info">
+                    <div class="channel-avatar" role="img" aria-label="Avatar do canal"><img src="./assets/img/DIO.jpg"
+                            alt=""></div>
+                    <div class="channel-name-subs">
+                        <h3><a href="https://www.youtube.com/@diomakethechange" aria-label="Ir para a página do canal" target="_blank">DigitalInnovationOne</a></h3>
+                        <span><span class="visually-hidden">Número de </span>122 mil inscritos</span>
+                    </div>
+                    <button class="subscribe-btn" aria-label="Inscrever-se no canal">Inscrever-se</button>
+                </section>
+                <div class="action-buttons" role="group" aria-label="Ações do vídeo">
+                    <button aria-label="Curtir vídeo"><img src="./assets/icons/Like.svg" alt="Dar like no vídeo"><span
+                            class="like-count">2.4 mil</span></button>
+                    <button aria-label="Não curtir vídeo"><img src="./assets/icons/Dislike.svg"
+                            alt="Não dar like no vídeo">Não Gostei</button>
+                    <button aria-label="Compartilhar vídeo"><img src="./assets/icons/Compartilhar.svg"
+                            alt="Compartilhar vídeo"> Compartilhar</button>
+                    <button aria-label="Baixar vídeo"><img src="./assets/icons/Download.svg" alt="Baixar vídeo">
+                        Download</button>
+                </div>
+            </div>
+            <section class="video-description">
+                <p>
+                    Acompanhe o lançamento da 5ª edição do Santander Bootcamp, dessa vez com 3 trilhas incríveis para
+                    você escolher:
+                </p>
+
+                <ul>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Back-end com Java</li>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Back-end com Python</li>
+                    <li>Santander Bootcamp 2025 - 5ª.Ed | Front-end</li>
+                </ul>
+
+                <p>
+                    Com experts da DIO, Santander, F1rst – o lado tech do Santander e a Universia, empresa que encontra
+                    e contrata talentos para o banco.
+                </p>
+
+                <p>
+                    O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em
+                    transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores
+                    oportunidades no mercado de tecnologia!
+                </p>
+
+                <p>
+                    Conheça mais sobre a <a href="http://www.dio.me/">DIO</a>
+                </p>
+                <button class="show-more" aria-expanded="false" aria-controls="full-description">Mostrar mais</button>
+            </section>
+        </article>
+
+        <section class="comments-section" aria-labelledby="comments-heading">
+            <h2 id="comments-heading">Comentários (<span class="comment-count">89</span>)</h2>
+            <div class="comment-input">
+                <div class="user-avatar" role="img" aria-label="Seu avatar"> <img src="./assets/icons/user.svg" alt="">
+                </div>
+                <label for="comment-text" class="sr-only">Adicionar um comentário público</label>
+                <input type="text" id="comment-text" placeholder="Adicionar um comentário público...">
+            </div>
+            <div class="comment">
+                <div class="comment-avatar" role="img" aria-label="Avatar do usuário que comentou"><img
+                        src="./assets/icons/user.svg" alt=""></div>
+                <div class="comment-content">
+                    <h4><a href="#" aria-label="Ver perfil do usuário">Nome do Usuário</a></h4>
+                    <p>Ótimo vídeo! Muito útil.</p>
+                    <time datetime="PT2H">Há 2 horas</time>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Vídeos sugeridos">
+        <h2>Próximos vídeos</h2>
+        <nav class="suggested-videos">
+            <ul>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 1 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 1"><img
+                                src="./assets/img/Ciências-de-Dados-Unimed-BH.png" alt="Ciências-de-Dados-Unimed-BH">
+                        </div>
+                        <div class="details">
+                            <h4>Geração Tech Unimed - BH - Ciência de Dados</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">2,1 mil visualizações </span>Transmitido há 2
+                                dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Scrum-Talks.png" alt="Scrum Talks"></div>
+                        <div class="details">
+                            <h4>Scrum Talks</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">1,6 mil visualizações </span>Transmitido há 3
+                                dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Fast-Track.png" alt="Machine Learning Avançado - Fast Track"></div>
+                        <div class="details">
+                            <h4>Machine Learning Avançado - Fast Track</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">1,7 mil visualizações</span>Transmitido há 4 dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Global-Skills.png" alt="Global Skills #2 - Project Planning"></div>
+                        <div class="details">
+                            <h4>Global Skills #2 - Project Planning</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">971 visualizações </span>Transmitido há 5 dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Python.png" alt="Como aprender a programar Python do ZERO"></div>
+                        <div class="details">
+                            <h4>Como aprender a programar Python do ZERO</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">711 visualizações </span>Transmitido há 6 dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Ciências-de-Dados-Unimed-BH.png"
+                                alt="Geração Tech Unimed - BH - Ciência de Dados"></div>
+                        <div class="details">
+                            <h4>Geração Tech Unimed - BH - Ciência de Dados</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">2,1 mil visualizações </span>Transmitido há 2
+                                dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Scrum-Talks.png" alt="Scrum Talks"></div>
+                        <div class="details">
+                            <h4>Scrum Talks</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">1,6 mil visualizações </span>Transmitido há 3
+                                dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Fast-Track.png" alt="Machine Learning Avançado - Fast Track"></div>
+                        <div class="details">
+                            <h4>Machine Learning Avançado - Fast Track</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">1,7 mil visualizações </span>Transmitido há 4
+                                dias</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="suggested-video-item"
+                        aria-label="Assistir Vídeo Sugerido 2 do DigitalInnovationOne">
+                        <div class="thumbnail" role="img" aria-label="Miniatura do Vídeo Sugerido 2"><img
+                                src="./assets/img/Global-Skills.png" alt="Global Skills #2 - Project Planning"></div>
+                        <div class="details">
+                            <h4>Global Skills #2 - Project Planning</h4>
+                            <span>DigitalInnovationOne</span>
+                            <span><span class="visually-hidden">971 visualizações </span>Transmitido há 5 dias</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
