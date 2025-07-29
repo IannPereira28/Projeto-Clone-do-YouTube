@@ -77,7 +77,7 @@ Este projeto foi criado com foco no desenvolvimento de layouts responsivos utili
 
 ## 👨‍💻 Autor
 
-**Seu Nome**
+**Iann Pereira**
 - GitHub: [@IannPereira28](https://github.com/IannPereira28)
 - LinkedIn: [iann-pereira-dev/](https://linkedin.com/in/iann-pereira-dev/)
 - Email: iannpereira20@outlook.com
